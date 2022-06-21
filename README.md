@@ -4,7 +4,7 @@ In this project, we build a tool that analyzes historical data and predicts pric
 
 ### Data Source
 
-We download data as CSV files from Yahoo Finance and Federal Reserve Economic Data. These websites provide sufficient information on the four metals selected for this project. Next, we import relevant libraries, set functions, and variables.
+We download data as CSV files from Amark.com, Yahoo Finance and Federal Reserve Economic Data. These websites provide sufficient information on the four metals selected for this project. Next, we import relevant libraries, set functions, and variables.
 
 ### Prepare & Cleanup Reference Data 
 
@@ -12,11 +12,13 @@ Import CSV files and create dateframe. Filter the index and close columns, remov
 
 ### Algorithmic Trading Signals
 
-* Short and long window Simple Moving Average (SMA) values – we generate the fast and slow simple moving averages. When actual returns are greater than or equal to 0, generate signal to buy stock long while when actual returns are less than 0, generate signal to sell stock short. We generate DMAC signal where 1 is when SMA Fast is less than the SMA Slow and 0 is when SMA Fast is greater than the SMA Slow. Using the Dual Moving Average Crossover (DMAC) signal, we calculate the points in time at which a position should be taken, 1 or -1.
+We will use Short and Long Window Simple Moving Average, Bollinger Bands and Natural Language Processing.
+
+* Short and Long Window Simple Moving Average (SMA) values – we generate the fast and slow simple moving averages. When actual returns are greater than or equal to 0, generate signal to buy stock long while when actual returns are less than 0, generate signal to sell stock short. We generate DMAC signal where 1 is when SMA Fast is less than the SMA Slow and 0 is when SMA Fast is greater than the SMA Slow. Using the Dual Moving Average Crossover (DMAC) signal, we calculate the points in time at which a position should be taken, 1 or -1.
 
 * Bollinger Bands – we use Bollinger bands to determine when to buy, sell or hold position. Generate the SMA, the upper-band and lower-band. When Close price is greater than or equal to 0, generate signal to buy stock long while when Close price is less than 0, generate signal to sell stock short.
 
-* Natural Language Processing - Use information on News API to perform NLTK sentiment analysis. We update and download VADER Lexicon. 
+* Natural Language Processing - Use information on News API to perform NLTK sentiment analysis. We update and download VADER Lexicon sentiment analyzer. 
 
 ### Assess Signals Algorithm
 
@@ -66,6 +68,8 @@ Replicate above steps as it applies to XGBoost.
 ## Considerations for future project
 
 * To use a User Interface for a real-life user experience.
+
+* Explore more news websites to be used for NLP.
 
 
 
