@@ -31,7 +31,20 @@ We preprocess signals dateframe for SMA Long and Short Windows, Bollinger Bands 
 
 •	 Bollinger Bands – Above is replicated.
 
-•	 NLP - 
+•	 NLP - Use information on News API to perform NLTK sentiment analysis. We update and download VADER Lexicon sentiment analyzer. Then fetch news on Gold, Silver,        Platinum and Palladium, sorting by relevance and maintaining a page size of 100. We set up sentiment variables then create the sentiment score for each metal.
+
+SVC and XGBoost for prediction – We apply these two machine learning algorithm to confirm which will give a better return.
+
+#### Apply SVC for prediction
+
+We create the classifier model, fit the model to the data using X train scaled and Y train. Then use the trained model to predict the trading signals for the training data. We create training report, create report dataframe then add the SVM model predictions to the dataframe. We add the actual returns to the dataframe and add the strategy returns to the dataframe. We then return the model, predictions and training report.
+
+#### Apply XGBoost for prediction
+
+Replicate above steps as it applies to XGBoost.
+
+
+
 
 
 https://docs.google.com/presentation/d/1ockfQjUo3ZwGYMgeEZbA42cQ1vNgXpskm-I82LjQy7A/edit?usp=sharing
