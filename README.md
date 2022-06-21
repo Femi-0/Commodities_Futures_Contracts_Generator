@@ -49,6 +49,8 @@ Replicate above steps as it applies to XGBoost.
 
 •	Each metal has its own volatility, as a result each metal may have its own key metrics that have not been identified in our current dataset.
 
+•	Providing financial advice based on the dataset used is not recommended as additional long-term data will be required to assist the model in predictions.
+
 ## Shortcomings
 
 •	Finding a news API that can provide historical data at no cost.
