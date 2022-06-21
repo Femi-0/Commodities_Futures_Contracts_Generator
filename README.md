@@ -34,7 +34,7 @@ We preprocess signals dateframe for SMA Long and Short Windows, Bollinger Bands 
 
 * Bollinger Bands – Above is replicated.
 
-* NLP - Use information on News API to perform NLTK sentiment analysis. We update and download VADER Lexicon sentiment analyzer. Then fetch news on Gold, Silver,        Platinum and Palladium, sorting by relevance and maintaining a page size of 100. We set up sentiment variables then create the sentiment score for each metal.
+* NLP - Use headlines from the News API to perform NLTK sentiment analysis. We updated and downloaded VADER Lexicon sentiment analyzer. We were able to look for articles regarding Gold, Silver, Platinum and Palladium. one of the problems we were having was due to the fact Gold is prized and even the word itself may not be talking about the metal. Through relevance and maintaining a page size of 100 we set up sentiment variables then create the sentiment score for each metal. In our research we were able to find a few Mining and metal fogused news websites.  However, they did not offer any API, as a result we attempted to use the beautifulsoup4 library but were unable to get usable data to complete NLP.  
 
 *SVC and XGBoost for prediction – We apply these two machine learning algorithm to confirm which will give a better return.
 
@@ -56,10 +56,10 @@ Replicate above steps as it applies to XGBoost.
 
 ## Shortcomings
 
-* Finding a news API that can provide historical data at no cost.
+* Finding a metal and mining news API that can provide historical data at no cost.
 
 
-* Our attempt to use website scraper on news websites with no API was unsuccessful. We will explore this in future projects.
+* Our attempt to use website scraper (beautifulsoup4) on news websites with no API was unsuccessful. We will explore this in future projects.
 
 
 * When using NLP, we were getting articles regarding Gold Medals like the Olympics or a new Platinum record which wasn’t quite relevant to the data we needed.
@@ -69,7 +69,7 @@ Replicate above steps as it applies to XGBoost.
 
 * To use a User Interface for a real-life user experience.
 
-* Explore more news websites to be used for NLP.
+* Explore more news websites to be used for NLP. Due to the fact we were able to find relivent data but not in a format we currently could utilize. We would like to continue down this path as machine learning and NLP has an untapped potental in this sector.
 
 
 
