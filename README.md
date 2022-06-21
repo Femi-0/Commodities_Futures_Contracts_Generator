@@ -43,6 +43,28 @@ We create the classifier model, fit the model to the data using X train scaled a
 
 Replicate above steps as it applies to XGBoost.
 
+## Findings
+
+•	Due to historical market performance, the imbalanced dataset skewed towards “hold” instead of buy/sell making the Machine Learning prediction methods unreliable.
+
+•	Each metal has its own volatility, as a result each metal may have its own key metrics that have not been identified in our current dataset.
+
+## Shortcomings
+
+•	Finding a news API that can provide historical data at no cost.
+
+
+•	Our attempt to use website scraper on news websites with no API was unsuccessful. We will explore this in future projects.
+
+
+•	When using NLP, we were getting articles regarding Gold Medals like the Olympics or a new Platinum record which wasn’t quite relevant to the data we needed.
+
+
+## Considerations for future project
+
+•	To use a User Interface for a real-life user experience.
+
+
 
 
 
