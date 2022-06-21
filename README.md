@@ -65,6 +65,8 @@ Replicate above steps as it applies to XGBoost.
 * When using NLP, we were getting articles regarding Gold Medals like the Olympics or a new Platinum record which wasn’t quite relevant to the data we needed.
 
 
+* Some input features are difficult to quantify the effect on metal price movement.
+
 ## Considerations for future project
 
 * To use a User Interface for a real-life user experience.
