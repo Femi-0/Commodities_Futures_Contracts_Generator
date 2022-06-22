@@ -71,7 +71,7 @@ Replicate above steps as it applies to XGBoost.
 
 * To use a User Interface for a real-life user experience.
 
-* Explore more news websites to be used for NLP. Due to the fact we were able to find relivent data but not in a format we currently could utilize. We would like to continue down this path as machine learning and NLP has an untapped potental in this sector.
+* Explore more news websites to be used for NLP. Due to the fact we were able to find relevant data but not in a format we currently could utilize. We would like to continue down this path as machine learning and NLP has an untapped potental in this sector.
 
 
 
